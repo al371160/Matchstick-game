@@ -1,0 +1,47 @@
+<html>
+    <head>
+       <style>
+           .matchstick {
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               width: 120px;
+           }
+
+           #num-matchstick-to-remove {
+               width: 100px;
+               height: 50px;
+               font-size: 1.5em;
+           }
+
+           #submit-move-btn {
+               width: 100px;
+               height: 50px;
+               font-size: 1em;
+           }
+
+           #restart-game-btn {
+               width: 100px;
+               height: 50px;
+               font-size: 1em;
+           }
+
+       </style>
+
+    </head>
+    <body>
+        <h1>Matchstick Game</h1>
+      <div>
+          <div id="matchstick-box">
+            
+          </div>
+      </div>
+      <p>Number of Matchsticks: <span id="number-of-matchsticks"></span></p>
+      <p>Current Player: <span id="current-player"></span></p>
+
+      <label for="num-matchstick-to-remove">Number of matchsticks to remove: </label>
+      <input id="num-matchstick-to-remove" min="1" max="3" type="number" />
+      <button type="button" id="submit-move-btn">Submit</button>
+      <button type="button" id="restart-game-btn">Restart Game</button>
+      <script src="js/jquery.js"></script>
+      <script src="js/script.js"></script>
+    </body>
+</html>
